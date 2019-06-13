@@ -11,7 +11,7 @@ import andrey_lab03.ViewResult;
 
 public class ViewTable extends ViewResult {
 
-    private static final int DEFAULT_WIDTH = 40;
+    private static final int DEFAULT_WIDTH = 45;
 
     private int width;
 
@@ -50,7 +50,7 @@ public class ViewTable extends ViewResult {
     private void outHeader() {
         Formatter fmt = new Formatter();
         fmt.format("%s%d%s%2$d%s", "%", (width - 30) / 2, "s | %", "s\n");
-        System.out.printf(fmt.toString(), "Number ", "Area and length of ​​a circle");
+        System.out.printf(fmt.toString(), "Number ", "Square in binary;  Length ​​in hex");
     }
 
     private void outBody() {

@@ -77,7 +77,7 @@ public class ViewResult implements View {
         int P = (int) (2*Math.PI*x);
         String sBinary = Integer.toBinaryString(S);
         String pHex = Integer.toHexString(P);
-        return "Binary " + sBinary + "; Hex " + pHex;
+        return sBinary + " \t " + pHex;
     }
 
     /**
